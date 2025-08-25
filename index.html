@@ -27,34 +27,74 @@
     <link rel="shortcut icon" href="https://eightynine.me/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="https://eightynine.me/apple-touch-icon.png"/>
 
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f2937, #111827);
+        }
+        .social-link {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white">
-    <header class="text-center py-10 bg-gray-800 shadow-lg">
-        <h1 class="text-5xl font-bold">EightyNine</h1>
-        <p class="text-gray-400 mt-2">Willkommen auf meiner offiziellen Webseite</p>
-    </header>
-    
-    <section class="text-center py-16 px-6 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-semibold">Über mich</h2>
-        <p class="text-gray-300 mt-4">Ich bin ein kreativer Enthusiast, der sich mit Social Media, Gaming und Content Creation beschäftigt. Folge mir auf meinen Kanälen, um mehr zu erfahren!</p>
-    </section>
-    
-    <section class="bg-gray-800 py-16 text-center">
-        <h2 class="text-3xl font-semibold">Folge mir auf Social Media</h2>
-        <div class="mt-6 space-y-4">
-            <a href="http://twitter.eightynine.me" target="_blank" class="block bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-md">Twitter</a>
-            <a href="http://discord.eightynine.me" target="_blank" class="block bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-6 rounded-md">Discord</a>
-            <a href="http://instagram.eightynine.me" target="_blank" class="block bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-md">Instagram</a>
-            <a href="http://tiktok.eightynine.me" target="_blank" class="block bg-black hover:bg-gray-700 text-white py-3 px-6 rounded-md">TikTok</a>
-            <a href="http://youtube.eightynine.me" target="_blank" class="block bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-md">YouTube</a>
-            <a href="http://twitch.eightynine.me" target="_blank" class="block bg-purple-500 hover:bg-purple-600 text-white py-3 px-6 rounded-md">Twitch</a>
-        </div>
-    </section>
-    
-    <footer class="text-center py-6 bg-gray-900 text-gray-500">
-        <p>&copy; 2025 EightyNine. Alle Rechte vorbehalten.</p>
-    </footer>
+<body class="text-white antialiased">
+    <main class="container mx-auto px-4 py-12 flex flex-col items-center justify-center min-h-screen">
+        <header class="text-center mb-12">
+            <img src="https://eightynine.me/apple-touch-icon.png" alt="Logo" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-gray-700 shadow-lg">
+            <h1 class="text-5xl font-bold tracking-tight">EightyNine</h1>
+            <p class="text-gray-400 mt-2 text-lg">Content Creator | Gamer | Tech Enthusiast</p>
+        </header>
+
+        <section class="w-full max-w-2xl">
+            <div class="bg-slate-800/60 border border-slate-700 backdrop-blur-sm rounded-xl shadow-2xl p-8">
+                <h2 class="text-2xl font-semibold text-center mb-6">Folge mir auf meinen Kanälen</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="http://twitter.eightynine.me" target="_blank" class="social-link bg-gray-700/50 hover:bg-gray-700 text-white py-4 px-6 rounded-lg flex items-center justify-center space-x-3">
+                        <i class="fab fa-twitter text-2xl"></i>
+                        <span class="font-semibold">Twitter</span>
+                    </a>
+                    <a href="http://discord.eightynine.me" target="_blank" class="social-link bg-gray-700/50 hover:bg-gray-700 text-white py-4 px-6 rounded-lg flex items-center justify-center space-x-3">
+                        <i class="fab fa-discord text-2xl"></i>
+                        <span class="font-semibold">Discord</span>
+                    </a>
+                    <a href="http://instagram.eightynine.me" target="_blank" class="social-link bg-gray-700/50 hover:bg-gray-700 text-white py-4 px-6 rounded-lg flex items-center justify-center space-x-3">
+                        <i class="fab fa-instagram text-2xl"></i>
+                        <span class="font-semibold">Instagram</span>
+                    </a>
+                    <a href="http://tiktok.eightynine.me" target="_blank" class="social-link bg-gray-700/50 hover:bg-gray-700 text-white py-4 px-6 rounded-lg flex items-center justify-center space-x-3">
+                        <i class="fab fa-tiktok text-2xl"></i>
+                        <span class="font-semibold">TikTok</span>
+                    </a>
+                    <a href="http://youtube.eightynine.me" target="_blank" class="social-link bg-gray-700/50 hover:bg-gray-700 text-white py-4 px-6 rounded-lg flex items-center justify-center space-x-3">
+                        <i class="fab fa-youtube text-2xl"></i>
+                        <span class="font-semibold">YouTube</span>
+                    </a>
+                    <a href="http://twitch.eightynine.me" target="_blank" class="social-link bg-gray-700/50 hover:bg-gray-700 text-white py-4 px-6 rounded-lg flex items-center justify-center space-x-3">
+                        <i class="fab fa-twitch text-2xl"></i>
+                        <span class="font-semibold">Twitch</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-8 mt-12 text-gray-500">
+            <p>&copy; 2025 EightyNine. Alle Rechte vorbehalten.</p>
+        </footer>
+    </main>
 </body>
 </html>
